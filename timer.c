@@ -89,9 +89,8 @@ timer_elapsed (int64_t then)
 
 /* Sleeps for approximately TICKS timer ticks.  Interrupts must
    be turned on. */
-/* Suspende a thread que chamou esta função até que o tempo
-   tenha avançado pelo menos TICKS ticks. Não usa busy wait:
-   bloqueia a thread e a insere na lista de dorminhocos. */
+
+
 void
 timer_sleep (int64_t ticks)
 {
